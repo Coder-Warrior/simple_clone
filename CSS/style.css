@@ -1,0 +1,276 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace, 'Secular One', sans-serif;
+    background-image: linear-gradient(90deg, black 40%, violet);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+header ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #889;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #666;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 72px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+    background: rgb(250 250 250 / 60%);
+    position: relative;
+}
+
+.landing img {
+    width: 35vw;
+    border-radius: 7px;
+    transition: 0.3s;
+    animation: top-bottom linear 2.5s infinite;
+}
+
+.landing img:hover {
+    filter: grayscale(70%);
+}
+
+.landing {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin-top: 150px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.landing .text h3,
+.landing .text p {
+    color: #889;
+}
+
+.features {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.features .title {
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    padding: 4px;
+    max-height: fit-content;
+}
+
+.features .title h3 span {
+    animation: glowing linear 1s infinite;
+}
+
+
+.features .title h3 span:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.features .title h3 span:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.features .title h3 span:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.features .title h3 span:nth-child(5) {
+    animation-delay: 4s;
+}
+
+.features .title h3 span:nth-child(6) {
+    animation-delay: 5s;
+}
+
+.features .title h3 span:nth-child(7) {
+    animation-delay: 6s;
+}
+
+.features .title h3 span:nth-child(8) {
+    animation-delay: 7s;
+}
+
+.features .title h3 span:nth-child(9) {
+    animation-delay: 8s;
+}
+
+.features .title h3 span:nth-child(10) {
+    animation-delay: 9s;
+}
+
+.features .title h3 span:nth-child(11) {
+    animation-delay: 10s;
+}
+
+.features .title h3 span:nth-child(12) {
+    animation-delay: 11s;
+}
+
+
+.features .title h3 span:nth-child(13) {
+    animation-delay: 12s;
+}
+
+
+.features .title h3 span:nth-child(14) {
+    animation-delay: 13s;
+}
+
+
+.features .title h3 span:nth-child(15) {
+    animation-delay: 14s;
+}
+
+.features .title h3 span:nth-child(16) {
+    animation-delay: 15s;
+}
+
+.features .text {
+    margin-top: 20px;
+}
+
+.features .text p {
+    color: #889;
+    font-size: 18px;
+}
+
+.features .box {
+    margin-bottom: 30px;
+}
+
+.features .titl {
+    font-size: 18px;
+    color: #889;
+    margin-bottom: 60px;
+}
+
+.contact {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.contact .title {
+    font-size: 18px;
+    color: #889;
+}
+
+.contact .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .card {
+    display: flex;
+}
+
+.contact .card img {
+    max-width: 150px;
+}
+
+@media (max-width: 674px) {
+    .contact .card img {
+        max-width: 30vw;
+    }   
+    .contact .content .card a:last-child p {
+        font-size: 14px !important;
+    }
+}
+
+.contact .content .card a:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.contact .content .card a:last-child p {
+    font-size: 18px;
+    color: #889;
+}
+
+.About {
+    margin-top: 150px;
+}
+
+.About h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: #889;
+    margin-bottom: 60px;
+}
+
+.About p {
+    font-size: 18px;
+    color: #889;
+    background-image: linear-gradient(90deg, rgb(23, 92, 172) 60%, rgb(15, 63, 119));
+    border-radius: 7px;
+    padding: 40px;
+}
+
+@media (max-width: 910px) {
+    .text {
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 550px) {
+    .landing img {
+        width: 60vw;
+    }
+}
+
+@keyframes top-bottom {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: none;
+        color: black;
+    }
+    100% {
+        color: green;
+        text-shadow: 0 0 10px green;
+    }
+}
